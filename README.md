@@ -10,7 +10,7 @@ Our prototype has some assumptions on primary and scavenger applications to simp
 
 ## Basic Usage
 ### Workflow
-The use of MSH involves three pieces of software: profiler, binary instrumentation, and MSH runtime. We assume that a user has a primary application and a set of scavenger applications that will run when there are stalled cycles in the primary application. One can use MSH in the following way.
+The use of MSH involves three pieces of software: profiler (scripts based on `perf`), binary instrumentation (`llvm-bolt`), and MSH runtime(`libmsh`). We assume that a user has a primary application and a set of scavenger applications that will run when there are stalled cycles in the primary application. One can use MSH in the following way.
 - Modify scavenger applications
 - Profile primary/scavenger applications.
 - Modify primary/scavenger binaries through binary instrumentation with the profile result.
